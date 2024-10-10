@@ -1,4 +1,4 @@
-const numbers =[300, 100, 700, 1200]
+
 const products = [
     {name: 'shanpoo', price: 300},
     {name: 'chiruni', price: 100},
@@ -6,7 +6,7 @@ const products = [
     {name: 'pant', price: 1200},
 ];
 
-function getShoppingTotal(products){
+function getShoppingTotal(){
     let total = 0;
     for(const product of products){
         total = total + product.price;        
