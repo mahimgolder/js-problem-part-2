@@ -1,4 +1,4 @@
-// number check korar funtion
+// number check korar funtion:
 function multiply (num1, num2){
     if(typeof num1 !== 'number' || typeof num2 !== 'number'){
         return 'Please provide a Number';
@@ -10,8 +10,8 @@ function multiply (num1, num2){
 const result = multiply('5', 'seven');
 // console.log(result);
 
-
-// string check korar function--
+// ------------*****------------
+// string check korar function:
 function fullName(first, second){
     if(typeof first !== 'string'){
         return 'Frist name should be a string';
@@ -27,7 +27,9 @@ function fullName(first, second){
 const full = fullName('mahim' );
 // console.log(full);
 
-// object check korar function-----
+
+// ---------------******-------------
+// object check korar function:
 function getPrice(product){
     if(typeof product !== 'object'){
         return 'Please type an Object '
@@ -36,25 +38,34 @@ function getPrice(product){
     return price;
 }
 
-// const price = getPrice({name: 'chulkani dandi', price: 35,color: 'blue'});
-const price = getPrice(5);
+const price = getPrice({name: 'chulkani dandi', price: 35,color: 'blue'});
+// const price = getPrice(5);// ata print korbe "please type an Object"
 // console.log(price);
 
+// -----------****----------------
 // Array check korar function
 function getSecond(array){
     if(typeof array );
     const second = array[1];
     return second;
 }
-// const second = getSecond([1, 25, 69]);
+const second = getSecond([1, 25, 69]);
 // console.log(second);
-// console log a object dekha jabe ,,karon js a array o akdhoroner object.tai isArray diye check  korte hobe .
+
+// console log a object dekha jabe ,karon js a array o akdhoroner object.tai isArray diye check  korte hobe .
+
+// isArray diye check kora : Note:[Array.isArray(paramiter)] 
 function getSecond(array){
     if(Array.isArray(array) == false ){
         return 'Please enter an Array'
     }
-    const second = array[1];
-    return second;
+    return array[2];
+    
+    
 }
-const second = getSecond(45);
-console.log(second);
+const array = [10, 20, 30, 40];
+const second2 = getSecond(array);
+console.log(second2);
+
+
+// -----------END----------
