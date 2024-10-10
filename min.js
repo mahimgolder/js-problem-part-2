@@ -1,18 +1,25 @@
-const prices = [20000, 16000, 100000, 12000, 30000, 35000];
+// const prices = [20000, 16000, 100000, 12000, 30000, 35000];
 
 // এখানে getmin নামের একটি ফাংশন ডিফাইন করা হয়েছে যা numbers নামের একটি প্যারামিটার গ্রহণ করছে।
 // numbers হলো সেই অ্যারে যা আমরা ফাংশনে পাঠাতে চাই। তবে, ফাংশনের মধ্যে এখনো কিছু করা হয়নি, তাই এটি ফাঁকা।
-function getmin(numbers){  
-    let  min = numbers[0];
 //for of use kore
+// function getmin(numbers){  
+    // let  min = numbers[0];
     // for(const num of numbers){
     //     if(num < min){
     //         min = num;
     //     }
     // }
+    // return min;
+// }
 
-
-// for loop use kore
+// const cheap = getmin(prices);    
+// console.log('cheapest one is :', cheap);
+// ____________________******_________________
+// for loop use kore:
+const prices = [20000, 16000, 100000, 12000, 30000, 35000];
+function getmin(numbers){
+    let  min = numbers[0];
     for(let i = 1; i < numbers.length; i++){
         if(numbers[i] < min){
             min = numbers[i];
